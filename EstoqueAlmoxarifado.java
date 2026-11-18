@@ -37,6 +37,7 @@ public class EstoqueAlmoxarifado {
 			break;
 			}
 		}while(opcao < 0 || opcao > 4);
+		ler.close();
 		return(opcao);
 	}
 
