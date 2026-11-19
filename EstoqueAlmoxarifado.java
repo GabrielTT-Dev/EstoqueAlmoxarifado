@@ -3,18 +3,19 @@ import java.util.Scanner;
 public class EstoqueAlmoxarifado {
 
 	public static void main(String[] args) {
-		exibirMenu();
-	}
-	public static int exibirMenu() {
-		Scanner ler = new Scanner(System.in);
-		int opcao;
-		do{ 
 		System.out.println("====ESCOLHA==== \n"
 				+ "1- Cadastrar Produto \n"
 				+ "2- Listar Estoque \n"
 				+ "3- Buscar Produto por Código \n"
 				+ "4- Verificar Menor Estoque (Alerta) \n"
 				+ "0- Sair");
+		exibirMenu();
+	}
+	public static int exibirMenu() {
+		// Método para exibir o menu
+		Scanner ler = new Scanner(System.in);
+		int opcao;
+		do{ 
 		opcao = ler.nextInt();
 			switch(opcao) {
 		case 1:
